@@ -12,8 +12,6 @@ public class Calculadora {
         Scanner scan = new Scanner(System.in);
         do {
             System.out.println("Digite a operacao matematica: + - * / caso queira sair digite: y");
-            // Neste linha poderia ser feita um ENUM com opcoes
-            // inteface para tipagem;
             this.operacao = scan.next();
             this.operacaoSair = !operacao.equals("y");
             switch (this.operacao.hashCode()) {
